@@ -3,5 +3,15 @@
 # hint: El método .include? de un string busca si un caracter
 # o string dado está contenido en éste.
 
+def incluido(string, caract)
+	if string.include?(caract) == true
+	 puts 'Si lo incluye'
+	else
+     puts 'No lo incluye'
+    end
+end
+
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+incluido(cadena, caracter)

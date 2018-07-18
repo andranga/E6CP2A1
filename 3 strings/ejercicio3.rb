@@ -6,3 +6,30 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+c = a + b
+puts c
+
+d=[] + a
+b.each {|i| 
+	d.push(i) if a.include?(i) == false
+}
+puts d
+
+e=[]
+b.each {|i| 
+	e.push(i) if a.include?(i) == true
+}
+puts e
+
+i=0
+f=[]
+g=[]
+while i < b.size
+	f[i]=[a[i], b[i]]
+	i += 1
+end
+puts f
+
+
+

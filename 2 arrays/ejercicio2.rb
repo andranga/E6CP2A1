@@ -10,3 +10,18 @@
 #    invertir el orden de los elementos en un arreglo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+
+a.delete_at(a.size-1)
+a.delete_at(0)
+a.delete_at(a.size/2)
+a.delete_at(a.size-1) unless a[a.size-1] == 1
+
+b=[]
+i=0
+while i < a.size
+	b[i] = a[a.size-(i+1)]
+	i += 1
+end
+puts a
+puts b
+

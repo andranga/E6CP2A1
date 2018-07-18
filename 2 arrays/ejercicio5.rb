@@ -7,10 +7,14 @@
 products = %w(Producto1 Producto2 Producto3 Producto4)
 prices = %w[1000 2000 1500 950]
 
+y=0
 html = ''
 products.each do |i|
-  html += "<div class='product'>"
-  html += "</div>\n"
+  price = prices[y]
+  html += "<div class='product'><p> #{i} </p><p> Precio: "
+  html += price
+  html += " </p></div>\n"
+  y += 1
 end
 
 puts html

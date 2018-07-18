@@ -3,13 +3,16 @@
 
 def random
   result = [true, false].sample
-  puts result
+  return result
 end
 
-if random == true
+ram=random
+if ram == true
   puts 'sí'
-elsif random == false
+elsif ram == false
   puts 'no'
 else
   puts 'error'
 end
+
+
